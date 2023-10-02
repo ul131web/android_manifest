@@ -137,7 +137,7 @@
   <remove-project name="platform/packages/modules/Connectivity" />
   <remove-project name="platform/packages/modules/Wifi" />
   <remove-project name="platform/packages/modules/DnsResolver" />
-  <remove-project name="platform/packages/MediaProvider" />
+  <remove-project name="platform/providers/MediaProvider" />
   <remove-project name="platform/packages/modules/NetworkStack" />
 
   <!-- Packages (services) -->
