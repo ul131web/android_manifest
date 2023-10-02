@@ -1,5 +1,4 @@
-![Cherish](assets/cherish.png)
-# <b> <i> CherishOS | Built with </i>💖
+
 
 Credits:
 =======
