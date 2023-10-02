@@ -33,6 +33,18 @@
   <remote name="pixel-gitlab"
           fetch="https://gitlab.pixelexperience.org/android"
           revision="thirteen-qpr3" />
+          
+<remote  name="ul131web"
+           fetch="https://github.com/ul131web/"
+           revision="refs/heads/13" />
+           
+  <remote  name="grapheneos"
+           fetch="https://github.com/GrapheneOS/"
+           revision="refs/heads/13" />
+           
+  <remote  name="grapheneos-gitlab"
+           fetch="https://gitlab.com/grapheneos/"
+           revision="refs/heads/13" />
 
   <!-- Rootdir -->
   <project path="art" name="android_art" remote="cherish" />
@@ -77,7 +89,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av"  remote="cherish"/>
-  <project path="frameworks/base" name="android_frameworks_base" remote="cherish" />
+  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="ul131web"  /> 
   <project path="frameworks/native" name="android_frameworks_native" remote="cherish" />
   <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="cherish" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" />
@@ -101,27 +113,28 @@
   <project path="packages/apps/DesktopMode" name="LMODroid/platform_packages_apps_DesktopMode" groups="pdk-fs" revision="thirteen" remote="github" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="cherish" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="cherish" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ul131web" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="cherish" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="cherish" /> 
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cherish" />
-  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="cherish" />
   <project path="packages/apps/ParallelSpace" name="android_packages_apps_ParallelSpace" remote="cherish" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cherish" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cherish" /> 
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="cherish" />
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="cherish" />
-  <project path="packages/modules/Permission" name="android_packages_modules_Permission"  remote="cherish" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="cherish" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
+  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="cherish" />
   <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="cherish" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="cherish" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="cherish" />
   <project path="packages/services/VncFlinger" name="LMODroid/platform_packages_services_VncFlinger" groups="pdk-cw-fs,pdk-fs" revision="thirteen" remote="github" />
-
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
+  <project path="packages/modules/DnsResolver" name="platform_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="grapheneos" />
+  <project path="packages/modules/NetworkStack" name="platform_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="grapheneos" />
   <!-- System -->
   <project path="system/core" name="android_system_core" remote="cherish" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="cherish" />
